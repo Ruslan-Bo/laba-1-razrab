@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script>
+
+        function Sumb(){
+            var x = document.getElementById("one").value;
+            var n = document.getElementById("two").value;
+
+            var sum = 0;
+
+            for(var i = 0; i < n; i++){
+                var p = (x**((2*i)+1))/((2*i)+1);
+                sum = sum + p;
+            }
+
+            alert(sum);
+        }
+
+    </script>
+
+    <h2>x</h2>
+    <input type="text" id="one">
+    <br>
+    <h2>n</h2>
+    <input type="text" id="two">
+    <br>
+    <input type="submit" onclick="Sumb()" value="Отправить">
+    
+</body>
+</html>
